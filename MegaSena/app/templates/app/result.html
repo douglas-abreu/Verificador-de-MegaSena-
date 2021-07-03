@@ -1,0 +1,137 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <div class="title">
+            <h3 class="text-center">Games with 4 scores</h3>
+        </div>
+    </div>
+    <div class="card-body my-5">
+        {% if listGameFour %}
+        <table class="table mt-4 table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Concurso</td>
+                    <th>Data</td>
+                    <th>Coluna 1</td>
+                    <th>Coluna 2</td>
+                    <th>Coluna 3</td>
+                    <th>Coluna 4</td>
+                    <th>Coluna 5</td>
+                    <th>Coluna 6</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for game in listGameFour %}
+            <tr>
+                <td>{{ game.0 }}</td>
+                <td>{{ game.1 }}</td>
+                <td>{{ game.2 }}</td>
+                <td>{{ game.3 }}</td>
+                <td>{{ game.4 }}</td>
+                <td>{{ game.5 }}</td>
+                <td>{{ game.6 }}</td>
+                <td>{{ game.7 }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h4 class="text-center">No results</h4>
+    {% endif %}
+    </div>
+</div>
+
+
+<div class="card my-5">
+    <div class="card-header">
+        <div class="title">
+            <h3 class="text-center">Games with 5 scores</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        {% if listGameFive %}
+        <table class="table mt-4 table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Concurso</td>
+                    <th>Data</td>
+                    <th>Coluna 1</td>
+                    <th>Coluna 2</td>
+                    <th>Coluna 3</td>
+                    <th>Coluna 4</td>
+                    <th>Coluna 5</td>
+                    <th>Coluna 6</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for game in listGameFive %}
+            <tr>
+                <td>{{ game.0 }}</td>
+                <td>{{ game.1 }}</td>
+                <td>{{ game.2 }}</td>
+                <td>{{ game.3 }}</td>
+                <td>{{ game.4 }}</td>
+                <td>{{ game.5 }}</td>
+                <td>{{ game.6 }}</td>
+                <td>{{ game.7 }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h4 class="text-center">No results</h4>
+    {% endif %}
+    </div>
+</div>
+
+<div class="card my-5">
+    <div class="card-header">
+        <div class="title">
+            <h3 class="text-center">Games with 6 scores</h3>
+        </div>
+    </div>
+    <div class="card-body">
+    {% if listGameSix %}
+        <table class="table mt-4 table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Concurso</td>
+                    <th>Data</td>
+                    <th>Coluna 1</td>
+                    <th>Coluna 2</td>
+                    <th>Coluna 3</td>
+                    <th>Coluna 4</td>
+                    <th>Coluna 5</td>
+                    <th>Coluna 6</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for game in listGameSix %}
+            <tr>
+                <td>{{ game.0 }}</td>
+                <td>{{ game.1 }}</td>
+                <td>{{ game.2 }}</td>
+                <td>{{ game.3 }}</td>
+                <td>{{ game.4 }}</td>
+                <td>{{ game.5 }}</td>
+                <td>{{ game.6 }}</td>
+                <td>{{ game.7 }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h4 class="text-center">No results</h4>
+    {% endif %}
+    </div>
+</div>   
+    
+
+
+
+
+
+
+{% endblock %}
